@@ -1,7 +1,4 @@
-//Adina Malik
-//BSDS 3A
 //C++ Program for a Geo Attendance Tracker
-
 
 #include <iostream>
 #include <string>                           // For string variables
@@ -9,7 +6,7 @@
 using namespace std;
 
 int main() {
-    // TASK:01 Variable Setup
+    // Variable Setup
 
     // Fixed Landmark Coordinates
     const double landmarkLat = 10.6;       // Fixed Latitude
@@ -66,7 +63,7 @@ int main() {
         cout << "Landmark latitude: " << landmarkLat << endl;
         cout << "Landmark Longitude: " << landmarkLong << endl;
 
-        // TASK:02  Distance Calculation
+        // Distance Calculation
 
         // Using Euclidean distance formula
         double distance = sqrt(pow(userLat - landmarkLat, 2) + pow(userLong - landmarkLong, 2));
@@ -74,7 +71,7 @@ int main() {
         // Display Calculated Distance
         cout << "\n Calculated distance from landmark: " << distance << endl;
 
-        // TASK:03 Attendance Check (if-else)
+        // Attendance Check (if-else)
         if (distance <= 0.8) {
             cout << "Attendance Status: Present" << endl;
             presentCount++;
@@ -86,7 +83,7 @@ int main() {
 
         totalUsers++;
 
-        // Task:04 Attendance Check for Multiple Users
+        // Attendance Check for Multiple Users
 
         // Ask if you want to continue
         cout << "\nDo you want to check another user? (yes / no): ";
@@ -102,4 +99,5 @@ int main() {
 
     return 0;
 }
+
 
